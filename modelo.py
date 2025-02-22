@@ -24,14 +24,14 @@ train_datagen = ImageDataGenerator(
 val_datagen = ImageDataGenerator(rescale=1./255)  # Solo normalización en validación
 
 train_generator = train_datagen.flow_from_directory(
-    'C:/Users/Julian.Drago/JULIAN/Creai_Investigacion/LenguajeVocales/dataset/train',
+    'direccion de train',
     target_size=(img_size, img_size),
     batch_size=batch_size,
     class_mode='categorical'
 )
 
 val_generator = val_datagen.flow_from_directory(
-    'C:/Users/Julian.Drago/JULIAN/Creai_Investigacion/LenguajeVocales/dataset/val',
+    'direccion de val',
     target_size=(img_size, img_size),
     batch_size=batch_size,
     class_mode='categorical'

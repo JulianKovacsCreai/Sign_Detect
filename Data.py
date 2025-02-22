@@ -4,7 +4,7 @@ import SeguimientoManos as sm
 
 #Creacion de carpeta
 nombre = 'Letra_I'
-direccion = 'C:/Users/Julian.Drago/JULIAN/Creai_Investigacion/LenguajeVocales/data/' 
+direccion = 'direccion de la carpeta' 
 carpeta = direccion + '/' + nombre
 
 if not os.path.exists(carpeta):
