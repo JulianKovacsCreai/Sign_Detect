@@ -23,6 +23,16 @@ pip install tensorflow opencv-python mediapipe numpy
 
 # Uso
 
+## Preparación del dataset
+
+Para preparar el dataset se ejecuta:
+
+```bash
+python Data.py
+```
+
+Se iniciará la cámara que se encargará de detectar tu mano utilizando el script de SeguimientoManos.py para tomar fotos de las diferentes señas que se guardarán en la carpeta asignada a la letra dentro de la carpeta data y así ir rellenando el dataset, donde se deberá realizar la corresponiente limpieza y ajuste de clases para el conjunto de entrenamiento y validación en la carpeta dataset.
+
 ## Entrenamiento del modelo
 
 Para entrenar el modelo con el dataset disponible, ejecuta:
